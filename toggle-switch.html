@@ -90,9 +90,58 @@
         <!--<![endif]-->
     </head>
     <body>
-        <label class="toggle">
-            <input type="checkbox" id="toggle" class="toggle__fallback" required />
-            <span class="toggle__switch"></span>
-        </label>
+        <form>
+            <label class="toggle">
+                <input type="checkbox" id="toggle1" class="toggle__fallback" />
+                <span class="toggle__switch"></span>
+            </label>
+
+            <label for="toggle1">default</label>
+
+            <br />
+            <br />
+
+            <label class="toggle">
+                <input type="checkbox" id="toggle2" class="toggle__fallback" checked />
+                <span class="toggle__switch"></span>
+            </label>
+
+            <label for="toggle2">pre-selected</label>
+
+            <br />
+            <br />
+
+            <label class="toggle">
+                <input type="checkbox" id="toggle3" class="toggle__fallback" required />
+                <span class="toggle__switch"></span>
+            </label>
+
+            <label for="toggle3">required</label>
+
+            <br />
+            <br />
+
+            <label class="toggle">
+                <input type="checkbox" id="toggle4" class="toggle__fallback" disabled />
+                <span class="toggle__switch"></span>
+            </label>
+
+            <label for="toggle4">disabled</label>
+
+            <br />
+            <br />
+
+            <label class="toggle">
+                <input type="checkbox" id="toggle5" class="toggle__fallback" checked disabled />
+                <span class="toggle__switch"></span>
+            </label>
+
+            <label for="toggle5">pre-selected and disabled</label>
+
+            <br />
+            <br />
+
+            <input type="submit" value="submit" />
+        </form>
     </body>
 </html>
